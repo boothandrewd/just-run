@@ -1,0 +1,21 @@
+{
+  "name": "justrun",
+  "version": "1.0.0",
+  "description": "Run",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "moment": "^2.15.1",
+    "mongodb": "^2.2.10",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/app.js"
+  },
+  "author": "Andrew D. Booth",
+  "license": "ISC"
+}

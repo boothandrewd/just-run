@@ -1,0 +1,28 @@
+//- views/index.jade
+doctype html
+html(lang="en")
+head
+  meta(charset="utf-8")
+  meta(http-equiv="X-UA-Compatible", content="IE-edge")
+  meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+
+  // CSS
+  
+  // JS
+  script(src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous" defer)
+  script(src="https://cdn.rawgit.com/igorescobar/jQuery-Mask-Plugin/master/src/jquery.mask.js" defer)
+  script(src="js/index.js" defer)
+  
+  // Page
+  title Just Run
+  
+body
+  if submitted
+    h3 Cool. We're done here.
+  else
+    form(method="post")
+      if unnsuccessful
+        h3 Whoops. Sorry about that. Can we try this again?
+      else
+        h3 Gimme your digits.
+      input(type="text" id="mobile_number" name="mobile_number" required)
